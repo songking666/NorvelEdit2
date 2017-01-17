@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99689A5D-1060-4F91-8C23-71C474A7AD38}</ProjectGuid>
+    <RootNamespace>NorvelEdit</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sqlite3.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sqlite3.lib</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="NorvelEdit.reg" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\classview.bmp" />
+    <None Include="res\classview_hc.bmp" />
+    <None Include="res\class_view.ico" />
+    <None Include="res\class_view_hc.ico" />
+    <None Include="res\explorer.bmp" />
+    <None Include="res\explorer_hc.bmp" />
+    <None Include="res\fileview.bmp" />
+    <None Include="res\fileview_hc.bmp" />
+    <None Include="res\file_view.ico" />
+    <None Include="res\file_view_hc.ico" />
+    <None Include="res\menuimages.bmp" />
+    <None Include="res\menuimages_hc.bmp" />
+    <None Include="res\NorvelEdit.ico" />
+    <None Include="res\NorvelEdit.rc2" />
+    <None Include="res\NorvelEditDoc.ico" />
+    <None Include="res\output_wnd.ico" />
+    <None Include="res\output_wnd_hc.ico" />
+    <None Include="res\sort.bmp" />
+    <None Include="res\sort_hc.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CapterView.h" />
+    <ClInclude Include="CppSQLite3U.h" />
+    <ClInclude Include="DatabaseTableAnimation.h" />
+    <ClInclude Include="DatabaseTableBase.h" />
+    <ClInclude Include="DatabaseTableBoy.h" />
+    <ClInclude Include="DatabaseTableCharacter.h" />
+    <ClInclude Include="DatabaseTableCommonWord.h" />
+    <ClInclude Include="DatabaseTableExpression.h" />
+    <ClInclude Include="DataBaseTableFirstName.h" />
+    <ClInclude Include="DatabaseTableGirl.h" />
+    <ClInclude Include="DatabaseTableMood.h" />
+    <ClInclude Include="DatabaseTablePlane.h" />
+    <ClInclude Include="DatabaseTableProfession.h" />
+    <ClInclude Include="DatabaseTableCloth.h" />
+    <ClInclude Include="DatabaseTableCountry.h" />
+    <ClInclude Include="DatabaseTableDecade.h" />
+    <ClInclude Include="DatabaseTableGeography.h" />
+    <ClInclude Include="DatabaseTableLastName.h" />
+    <ClInclude Include="DatabaseTableRank.h" />
+    <ClInclude Include="DatabaseTableRelationship.h" />
+    <ClInclude Include="DatabaseTableReligion.h" />
+    <ClInclude Include="DatabaseTableRoleStatus.h" />
+    <ClInclude Include="DatabaseTableScene_Type.h" />
+    <ClInclude Include="DatabaseTableTechnology.h" />
+    <ClInclude Include="DatabaseTableTheme.h" />
+    <ClInclude Include="DatabaseTableThings.h" />
+    <ClInclude Include="DatabaseTableTimeLen.h" />
+    <ClInclude Include="DatabaseTableTimeUnit.h" />
+    <ClInclude Include="DatabaseTableTitle.h" />
+    <ClInclude Include="DatabaseTableWeapon.h" />
+    <ClInclude Include="DatabaseTableWeather.h" />
+    <ClInclude Include="DataConvert.h" />
+    <ClInclude Include="DlgAddress.h" />
+    <ClInclude Include="DlgCreateScene.h" />
+    <ClInclude Include="DlgDatabaseEditCommWord.h" />
+    <ClInclude Include="DlgDatabaseNameEdit.h" />
+    <ClInclude Include="DlgDatabaseTableEditOther.h" />
+    <ClInclude Include="DlgGetName.h" />
+    <ClInclude Include="DlgInsertStatement.h" />
+    <ClInclude Include="DlgMap.h" />
+    <ClInclude Include="DlgPanel.h" />
+    <ClInclude Include="DlgRoleDesign.h" />
+    <ClInclude Include="DlgStep1.h" />
+    <ClInclude Include="DlgStep2.h" />
+    <ClInclude Include="DlgStep3.h" />
+    <ClInclude Include="MapBase.h" />
+    <ClInclude Include="MapCanvas.h" />
+    <ClInclude Include="MapMountain.h" />
+    <ClInclude Include="RoleNameView.h" />
+    <ClInclude Include="FormatBar.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="NorvelEdit.h" />
+    <ClInclude Include="NorvelEditDoc.h" />
+    <ClInclude Include="NorvelEditView.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SaveFormat.h" />
+    <ClInclude Include="sqlite3.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="WizardSheet.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CapterView.cpp" />
+    <ClCompile Include="CppSQLite3U.cpp" />
+    <ClCompile Include="DatabaseTableAnimation.cpp" />
+    <ClCompile Include="DatabaseTableBase.cpp" />
+    <ClCompile Include="DatabaseTableBoy.cpp" />
+    <ClCompile Include="DatabaseTableCharacter.cpp" />
+    <ClCompile Include="DatabaseTableCommonWord.cpp" />
+    <ClCompile Include="DatabaseTableExpression.cpp" />
+    <ClCompile Include="DataBaseTableFirstName.cpp" />
+    <ClCompile Include="DatabaseTableGirl.cpp" />
+    <ClCompile Include="DatabaseTableMood.cpp" />
+    <ClCompile Include="DatabaseTablePlane.cpp" />
+    <ClCompile Include="DatabaseTableProfession.cpp" />
+    <ClCompile Include="DatabaseTableCloth.cpp" />
+    <ClCompile Include="DatabaseTableCountry.cpp" />
+    <ClCompile Include="DatabaseTableDecade.cpp" />
+    <ClCompile Include="DatabaseTableGeography.cpp" />
+    <ClCompile Include="DatabaseTableLastName.cpp" />
+    <ClCompile Include="DatabaseTableRank.cpp" />
+    <ClCompile Include="DatabaseTableRelationship.cpp" />
+    <ClCompile Include="DatabaseTableReligion.cpp" />
+    <ClCompile Include="DatabaseTableRoleStatus.cpp" />
+    <ClCompile Include="DatabaseTableScene_Type.cpp" />
+    <ClCompile Include="DatabaseTableTechnology.cpp" />
+    <ClCompile Include="DatabaseTableTheme.cpp" />
+    <ClCompile Include="DatabaseTableThings.cpp" />
+    <ClCompile Include="DatabaseTableTimeLen.cpp" />
+    <ClCompile Include="DatabaseTableTimeUnit.cpp" />
+    <ClCompile Include="DatabaseTableTitle.cpp" />
+    <ClCompile Include="DatabaseTableWeapon.cpp" />
+    <ClCompile Include="DatabaseTableWeather.cpp" />
+    <ClCompile Include="DataConvert.cpp" />
+    <ClCompile Include="DlgAddress.cpp" />
+    <ClCompile Include="DlgCreateScene.cpp" />
+    <ClCompile Include="DlgDatabaseEditCommWord.cpp" />
+    <ClCompile Include="DlgDatabaseNameEdit.cpp" />
+    <ClCompile Include="DlgDatabaseTableEditOther.cpp" />
+    <ClCompile Include="DlgGetName.cpp" />
+    <ClCompile Include="DlgInsertStatement.cpp" />
+    <ClCompile Include="DlgMap.cpp" />
+    <ClCompile Include="DlgPanel.cpp" />
+    <ClCompile Include="DlgRoleDesign.cpp" />
+    <ClCompile Include="DlgStep1.cpp" />
+    <ClCompile Include="DlgStep2.cpp" />
+    <ClCompile Include="DlgStep3.cpp" />
+    <ClCompile Include="MapBase.cpp" />
+    <ClCompile Include="MapCanvas.cpp" />
+    <ClCompile Include="MapMountain.cpp" />
+    <ClCompile Include="RoleNameView.cpp" />
+    <ClCompile Include="FormatBar.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="NorvelEdit.cpp" />
+    <ClCompile Include="NorvelEditDoc.cpp" />
+    <ClCompile Include="NorvelEditView.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="SaveFormat.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="WizardSheet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="NorvelEdit.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="NorvelEdit.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
